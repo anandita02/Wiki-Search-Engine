@@ -1,3 +1,4 @@
+------------------------------------------------------------------------------------------------------------------------------------
 							README: INDEX CREATION
 ------------------------------------------------------------------------------------------------------------------------------------
 List of FILES:
@@ -11,6 +12,8 @@ List of FILES:
 
 ------------------------------------------------------------------------------------------------------------------------------------
 STRUCTURE of In-Memory Data Structure:
+------------------------------------------------------------------------------------------------------------------------------------
+
 <Outer_Map>
 KEY: WORD, VALUE: <Inner_Map>
 <Inner_Map>
@@ -23,6 +26,8 @@ mylist class object has four variables:
 
 ------------------------------------------------------------------------------------------------------------------------------------
 FLOW OF CONTROL: 
+------------------------------------------------------------------------------------------------------------------------------------
+
 File1 reads the content of XML File and SAX Parser passes it to MYHandler.java. MyHandler contains the following functions:
 (i) startElement: It identifies Open tag in XML file
 (ii) character: It reads the data enclosed between opentag and closetag
@@ -43,6 +48,8 @@ On detection of closing tag of file, the data of MAP data structure is written i
 
 ------------------------------------------------------------------------------------------------------------------------------------
 EXTRA FEATURES: 
+------------------------------------------------------------------------------------------------------------------------------------
+
 (i) Not storing zeros in index file. 
 Explanation: Many words in index were appearing in only one or two of the four possible categories. For such words, "0" count was getting stored again and again. Similar to the concept of sparse matrices, i decided to store only the values which are non-zero. This resulted in a significant reduction of index size.
 Result: Reduction of size of index from 35-36 MB to 26-27 MB.
