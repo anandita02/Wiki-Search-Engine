@@ -13,7 +13,8 @@ INDEX CREATION MODULE
 (vi) mylist.java (Helper file, only class def)
 
 ----------------------------------------------------------------------
-STRUCTURE of In-Memory Data Structure:
+		STRUCTURE of In-Memory Data Structure:
+----------------------------------------------------------------------
 
 <Outer_Map>
 KEY: WORD, VALUE: <Inner_Map>
