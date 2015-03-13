@@ -1,8 +1,9 @@
-_________________________________________________
-							README: INDEX CREATION
-_________________________________________________
 
-List of FILES:
+INDEX CREATION MODULE
+
+----------------------------------------------------------------------
+				List of FILES:
+----------------------------------------------------------------------
 
 (i) file1.java (Main File)
 (ii) MyHandler.java (to scrap relevant data from XML)
@@ -25,7 +26,7 @@ mylist class object has four variables:
 (iv) title (INTEGER)
 
 ----------------------------------------------------------------------
-FLOW OF CONTROL: 
+				FLOW OF CONTROL: 
 ----------------------------------------------------------------------
 
 File1 reads the content of XML File and SAX Parser passes it to MYHandler.java. MyHandler contains the following functions:
@@ -47,7 +48,7 @@ The MyHandler class then calls handle_title, handle_body, handle_infobox, handle
 On detection of closing tag of file, the data of MAP data structure is written into the index file.
 
 ----------------------------------------------------------------------
-EXTRA FEATURES: 
+				EXTRA FEATURES: 
 ----------------------------------------------------------------------
 
 (i) Not storing zeros in index file. 
