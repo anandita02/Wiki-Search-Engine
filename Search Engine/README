@@ -1,0 +1,20 @@
+
+
+========================================
+REQUIRED FILES during Execution of this module
+========================================
+Considering that all the data files are present in the home folder. The required files are as under: 
+Index_Ter: The main tertiary index            
+Large.xml: Original Wikipedia dump XML File        
+Tertiary_Index: The tertiary index created so as to increase the speed of retrieval
+Index_Title_Mapping  : A dense secondary index to titlemap file
+Secondary_Index  : A dense secondary index that maps data in the main index
+titlemap: List of all title's mapped to title ID's
+
+========================================
+INSTALLATION DETAILS:
+=======================================
+To install the Java files, so as to make it compatible with the OS: 
+execute ./install.sh
+
+Then directly execute ./run.sh "path to index" <input file
