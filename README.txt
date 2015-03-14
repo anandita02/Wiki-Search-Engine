@@ -1,6 +1,9 @@
-							README: INDEX CREATION
-------------------------------------------------------------------------------------------------------------------------------------
-List of FILES:
+
+INDEX CREATION MODULE
+
+----------------------------------------------------------------------
+				List of FILES:
+----------------------------------------------------------------------
 
 (i) file1.java (Main File)
 (ii) MyHandler.java (to scrap relevant data from XML)
@@ -9,8 +12,10 @@ List of FILES:
 (v) stemmer.java (Porter Stemmer code)
 (vi) mylist.java (Helper file, only class def)
 
-------------------------------------------------------------------------------------------------------------------------------------
-STRUCTURE of In-Memory Data Structure:
+----------------------------------------------------------------------
+		STRUCTURE of In-Memory Data Structure:
+----------------------------------------------------------------------
+
 <Outer_Map>
 KEY: WORD, VALUE: <Inner_Map>
 <Inner_Map>
@@ -21,8 +26,10 @@ mylist class object has four variables:
 (iii) infobox (INTEGER)
 (iv) title (INTEGER)
 
-------------------------------------------------------------------------------------------------------------------------------------
-FLOW OF CONTROL: 
+----------------------------------------------------------------------
+				FLOW OF CONTROL: 
+----------------------------------------------------------------------
+
 File1 reads the content of XML File and SAX Parser passes it to MYHandler.java. MyHandler contains the following functions:
 (i) startElement: It identifies Open tag in XML file
 (ii) character: It reads the data enclosed between opentag and closetag
@@ -41,8 +48,10 @@ The MyHandler class then calls handle_title, handle_body, handle_infobox, handle
 
 On detection of closing tag of file, the data of MAP data structure is written into the index file.
 
-------------------------------------------------------------------------------------------------------------------------------------
-EXTRA FEATURES: 
+----------------------------------------------------------------------
+				EXTRA FEATURES: 
+----------------------------------------------------------------------
+
 (i) Not storing zeros in index file. 
 Explanation: Many words in index were appearing in only one or two of the four possible categories. For such words, "0" count was getting stored again and again. Similar to the concept of sparse matrices, i decided to store only the values which are non-zero. This resulted in a significant reduction of index size.
 Result: Reduction of size of index from 35-36 MB to 26-27 MB.
